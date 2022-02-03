@@ -17,7 +17,7 @@ Explanation: After calling your function, the input array is modified to: [1,0,0
  * @return {void} Do not return anything, modify arr in-place instead.
  */
  var duplicateZeros = function(arr) {
-   
+
     var orginalLength = arr.length;
     var count=0;
     
