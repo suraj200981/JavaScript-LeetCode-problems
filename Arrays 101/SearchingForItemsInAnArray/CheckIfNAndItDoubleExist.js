@@ -21,15 +21,21 @@ arr[i] == 2 * arr[j]
     
 
     for (var i = 0; i <arr.length; i++) {
-
-        for (var j = 0; j < arr.length-1; j++) {
-                if(arr[i] ==2* arr[j] && i!==j){
+        if(arr[i] == 8){
+            console.log(arr[i]);
+        }
+        for (var j = 0; j < arr.length; j++) {
+            if(arr[j] ==4){
+            console.log(arr[j]);
+            }
+                if(arr[i] == arr[j]+arr[j] && i!==j){
                     return true;
             }
+
         }
     }
     return false;
 };
 
 
-console.log(checkIfExist([-2,0,10,-19,4,6,-8]));
+console.log(checkIfExist([-20,8,-6,-14,0,-19,14,4]));
