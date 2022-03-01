@@ -22,11 +22,9 @@ arr[i] == 2 * arr[j]
 
     for (var i = 0; i <arr.length; i++) {
         if(arr[i] == 8){
-            console.log(arr[i]);
         }
         for (var j = 0; j < arr.length; j++) {
             if(arr[j] ==4){
-            console.log(arr[j]);
             }
                 if(arr[i] == arr[j]+arr[j] && i!==j){
                     return true;
