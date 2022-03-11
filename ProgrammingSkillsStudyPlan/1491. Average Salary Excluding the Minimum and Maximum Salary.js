@@ -1,5 +1,7 @@
 /*
 
+https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/submissions/
+
 You are given an array of unique integers salary where salary[i] is the salary of the ith employee.
 
 Return the average salary of employees excluding the minimum and maximum salary. 
