@@ -13,11 +13,9 @@
     }
      if(strs.length ==1){
         return strs[0];
-
      }
     var preFixFound = "";
     var temp = "";
-    var count=0;
 
     for(var i=0; i<strs.length; i++){
         if(strs[i].length == 0){
@@ -28,16 +26,14 @@
         }
         var currentWord = strs[i];
         preFixFound = temp;
-        temp= "";
+        
         for(var j=0; j < currentWord.length; j++){
             if(i>0){
                 if(currentWord[j]==preFixFound[j]){
-                   // count++;
+                   //count++;
                     temp += preFixFound[j];
-                   // console.log(temp);
-                    
-                }
-               
+                   //console.log(temp);
+                }   
             }else{
                 if(i+1>=strs.length){
                      break;
@@ -46,6 +42,7 @@
                     preFixFound += strs[i+1][j];
                     temp = preFixFound;
                     console.log(preFixFound);
+                    
                 }
             }
         }
